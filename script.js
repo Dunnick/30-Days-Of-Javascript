@@ -48,3 +48,41 @@ console.log(typeof u);             // object
 
 
 
+//DAY TWO   
+
+/* 30-Day-Of-Javascript - Day Two */
+let challenge = "30 Days Of JavaScript";
+console.log(challenge);
+console.log(challenge.length);
+console.log(challenge.toUpperCase());
+console.log(challenge.toLowerCase());
+console.log(challenge.substring(0, 2));
+console.log(challenge.substring(3));
+console.log(challenge.includes('Script'));
+console.log(challenge.split());
+console.log(challenge.split(','));
+console.log(challenge.replace('Javascript', 'Python'));
+console.log(challenge.charAt(15));
+console.log(challenge.charCodeAt(11));
+console.log(challenge.indexOf('a'));
+console.log(challenge.lastIndexOf('a'));
+let string = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+console.log(string.split(', '));
+
+let string1 = 'You cannot end a sentence with because because because is a conjunction';
+console.log(string1.indexOf('because'));
+console.log(string1.lastIndexOf('because'));
+console.log(string1.search('because'));
+
+let string2 = '30';
+console.log(string2.concat(' ','Days of',' ','Javascript'));
+console.log(challenge.trim());
+console.log(' 30 Days Of JavaScript '.trim());
+console.log(challenge.startsWith('30'));
+console.log(challenge.startsWith('Java'));
+console.log(challenge.endsWith("Days"));
+console.log(challenge.endsWith("JavaScript"));
+console.log(challenge.match(/a/gi));
+console.log(challenge.repeat(2));
+
+
