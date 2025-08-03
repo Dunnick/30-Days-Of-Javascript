@@ -49,7 +49,7 @@ console.log(typeof u);             // object
 
 
 //DAY TWO   
-
+//Data types
 /* 30-Day-Of-Javascript - Day Two */
 let challenge = "30 Days Of JavaScript";
 console.log(challenge);
@@ -86,3 +86,83 @@ console.log(challenge.match(/a/gi));
 console.log(challenge.repeat(2));
 
 
+
+//DAY THREE
+//Boolean, Constant & Assignment Operators
+// This code is from VS Code but will run in browser console
+
+
+// Variable declaration and typeof checks
+let firstName = "Duniah";
+let lastName = "Nicholas";
+let country = "Ghana";
+let city = "Kumasi";
+let age = 25;
+let isMarried = false;
+let year = 2025;
+
+console.log(typeof firstName); // string
+console.log(typeof lastName); // string
+console.log(typeof country); // string
+console.log(typeof city); // string
+console.log(typeof age);       // number
+console.log(typeof isMarried); // boolean
+console.log(typeof year);      // number
+
+// Type comparison
+console.log(typeof '10' == typeof 10); 
+console.log(parseInt('9.8') == 10);    
+
+// Truthy values
+console.log(Boolean(1));           
+console.log(Boolean('Hello'));    
+console.log(Boolean(true));       
+
+// Falsy values
+console.log(Boolean(0));          
+console.log(Boolean(""));         
+console.log(Boolean(undefined));  
+
+// Comparison expressions
+console.log(4 > 3);          
+console.log(4 >= 3);         
+console.log(4 < 3);          
+console.log(4 <= 3);         
+console.log(4 == 4);         
+console.log(4 === 4);        
+console.log(4 != 4);         
+console.log(4 !== 4);        
+console.log(4 != '4');       
+console.log(4 == '4');      
+console.log(4 === '4');      
+
+// Length comparison
+let python = "python";
+let jargon = "jargon";
+console.log(python.length != jargon.length);  
+
+// Logical operations
+console.log(4 > 3 && 10 < 12);   
+console.log(4 > 3 && 10 > 12);    
+console.log(4 > 3 || 10 < 12);    
+console.log(4 > 3 || 10 > 12);    
+console.log(!(4 > 3));            
+console.log(!(4 < 3));            
+console.log(!false);             
+console.log(!(4 > 3 && 10 < 12)); 
+console.log(!(4 > 3 && 10 > 12)); 
+console.log(!(4 === '4'));        
+
+// 'on' in both dragon and python
+let dragon = "dragon";
+console.log(dragon.includes("on") && python.includes("on")); // true
+
+// Date object operations
+let now = new Date();
+console.log("Year:", now.getFullYear());         // current year
+console.log("Month:", now.getMonth() + 1);       // month (0-based, so +1)
+console.log("Date:", now.getDate());             // day of the month
+console.log("Day:", now.getDay());               // day of the week (0=Sunday)
+console.log("Hours:", now.getHours());           // current hour
+console.log("Minutes:", now.getMinutes());       // current minutes
+console.log("Seconds since Jan 1, 1970:", Math.floor(now.getTime() / 1000));
